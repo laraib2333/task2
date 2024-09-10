@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #9a54d6;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 1.5rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo img {
+  width: 8rem;
+  height: auto;
+}
+
+header .navbar ul {
+  list-style: none;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a {
+  font-size: 1.25rem;
+  padding: 1.25rem;
+  margin-left: 5rem;
+  color: #FFFFFF;
+  display: block;
+  transition: color 0.3s ease-in-out;
+}
+
+header .navbar ul li a:hover {
+  color: #19052c;
+}
+
+header .navbar ul li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 12.5rem;
+}
+
+header .navbar ul li ul li {
+  width: 100%;
+}
+
+header .navbar ul li ul li a {
+  background-color: #81629e;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #19052c;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header .navbar ul li ul li a:hover {
+  color: #19052c;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+
+#click {
+  display: none;
+}
+
+header .label img {
+  width: 2vw;
+  cursor: pointer;
+  height: auto;
+}
+.profile{
+  margin-left: 9rem;
+  border-radius: 40px;
+  background-color: #FFFEFE1A;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  gap: 0.5rem;
+  color: #FFFF;
+  padding: 0.25rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+/* Body Section */
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 6rem;
+}
+
+.discription {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+h1 {
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 84px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 26.88px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.join-btn {
+  border: 2px solid #FFFFFF;
+  background-color: #9a54d6;
+  padding: .77rem;
+  border-radius: 8px;
+  width: 10vw;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26.88px;
+}
+
+.demo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  color: #FFFFFF;
+}
+
+#Polygon {
+  border: 2px solid #FFFF;
+  border-radius: 50%;
+  padding: 18px;
+  width: 3.7rem;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid #FFFF;
+  border-radius: 5px;
+  width: 28vw;
+  padding: .5rem;
+}
+
+.search-1 {
+  display: flex;
+  gap: 2rem;
+  padding-left: 1rem;
+}
+
+.search img {
+  width: 2vw;
+  height: auto;
+}
+
+.srh {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.serach-btn {
+  border: 2px solid #FFFF;
+  width: 8vw;
+  border-radius: 5px;
+  padding: .5rem;
+  background: #FFFFFF;
+  color: #9a54d6;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 31.36px;
+}
+
+/* Slider */
+#slider {
+  filter: drop-shadow(#d8c4e8 0.5rem 0.5rem 4rem);
+  max-width: 37.7rem;
+  height: 30rem;
+  position: relative;
+  top: 30px;
+  right: 50px;
+  overflow: hidden;
+}
+
+#slider input[type="radio"] {
+  display: none;
+}
+
+#slides {
+  display: flex;
+  flex-direction: column;
+  height: 430%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+  
+  display: block;
+  width: 28.438rem;
+  height: 28.438rem;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  gap: .625rem;
+  transform: translateY(50%);
+  position: absolute;
+  left: 87%;
+  bottom: 47%;
+}
+
+#controls label {
+  cursor: pointer;
+  background-color: rgba(219, 200, 236, 0.295);
+  border-radius: 50%;
+  width: .625rem;
+  height: .625rem;
+}
+
+#slide1:checked ~ #slides {
+  transform: translateY(0);
+}
+
+#slide2:checked ~ #slides {
+  transform: translateY(-25%);
+}
+
+#slide3:checked ~ #slides {
+  transform: translateY(-50%);
+}
+
+#slide4:checked ~ #slides {
+  transform: translateY(-75%);
+}
+
+#slide1:checked ~ #controls label[for="slide1"],
+#slide2:checked ~ #controls label[for="slide2"],
+#slide3:checked ~ #controls label[for="slide3"],
+#slide4:checked ~ #controls label[for="slide4"] {
+  background-color: rgb(209, 180, 236);
+}
+
+/* Media Queries */
+@media (max-width:991px) {
+  header {
+    padding: 1rem;
+  }
+
+  header .label img {
+    display: block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffff;
+    text-align: center;
+    display: none;
+  }
+
+  header .navbar ul li {
+    width: 100%;
+  }
+
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+
+  header label {
+    cursor: pointer;
+    display: block;
+    z-index: 2000;
+  }
+
+  #click:checked ~ .navbar {
+    display: block;
+  }
+
+  .section {
+    padding: 20px;
+    max-width: 100vw;
+    display: block;
+  }
+
+  h1 {
+    font-size: 55px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .discription {
+    width: 100%;
+  }
+
+  .join-btn {
+    width: 20vw;
+  }
+
+  .search {
+    width: 48vw;
+  }
+
+  #slider {
+    width: 80%;
+    height: 35rem;
+    top: 30px;
+    right: 10px;
+  }
+
+  #slides {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  #slide2:checked ~ #slides {
+    transform: translateX(-25%);
+  }
+
+  #slide3:checked ~ #slides {
+    transform: translateX(-50%);
+  }
+
+  #slide4:checked ~ #slides {
+    transform: translateX(-75%);
+  }
+
+  #controls {
+    flex-direction: row;
+    transform: translateX(40%);
+    left: 45%;
+    bottom: 7%;
+  }
+}
+
+@media (max-width:412px) {
+  .section {
+    padding: 2px;
+  }
+
+  h1 {
+    font-size: 29px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .join-btn {
+    width: 40vw;
+  }
+
+  .search {
+    width: 55vw;
+  }
+
+  .search img {
+    width: 3vw;
+  }
+
+  .srh {
+    font-size: .6rem;
+  }
+
+  .serach-btn {
+    width: 16vw;
+  }
+
+  #slider {
+    width: 80%;
+    height: 35rem;
+    right: 50px;
+  }
+
+  #controls {
+    flex-direction: row;
+    transform: translateX(40%);
+    left: 45%;
+    bottom: 7%;
+  }
+}

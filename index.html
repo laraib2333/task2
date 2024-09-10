@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive landing page Task 2</title>
+    <!-- CSS Link -->
+     <link rel="stylesheet" href="./style.css">
+
+     <!-- Google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+     <!-- Font cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- animation -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  
+
+     <!-- Navbar --> 
+
+     <header>
+        <a href="/" class="logo">
+            <img src="./images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">For New Student’s <img src="./images/drop.png" alt=""></a>
+                        <ul>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </li>
+                <li><a href="/">Contact Us</a></li>
+           
+            </ul>
+          
+        </nav>
+        <div class="profile">Profile <img src="./images/profile-user 1.png" alt=""></div>
+        <input type="checkbox" id="click">
+        <label for="click">
+        <img src="./images/menu-bar.png" >
+        </label>
+     </header>
+     <section class="section">
+<!-- discription -->
+
+        <div class="discription">
+            <h1 data-aos="flip-left" data-offset="200">
+                Learn Website 
+                Development
+            </h1>
+            <p data-aos="fade-up" data-offset="200"
+            >
+                Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="demo" data-aos="flip-left" data-offset="1000">
+            <button class="join-btn" >Join Now</button>
+            <div class="play"><img src="./images/Polygon 1 (1).png" id="Polygon"> <img src="./images/Line 3.png" id="Line" > Watch Demo....</div>
+        </div>
+
+            <div class="search" data-aos="fade-right" data-aos="fade-right">
+               <div class="search-1">
+                <img src="./images/search-interface-symbol 1 (1).png">
+                <p class="srh">Find Course...</p>
+            </div>
+                <button class="serach-btn">Search</button>
+            </div>
+        </div>
+<!-- slider -->
+ 
+<div id="slider">
+ 
+    <input type="radio" name="slide" id="slide1">
+    <input type="radio" name="slide" id="slide2">
+    <input type="radio" name="slide" id="slide3">
+    <input type="radio" name="slide" id="slide4">
+   
+       <div id="slides"  data-aos="zoom-in-left" data-offset="1000">
+           <div class="slide">
+               <img src="./images/boy.png"  id="img" >
+           </div>
+           <div class="slide">
+                <img src="./images/boy.png"   id="img">  
+           </div>
+           <div class="slide">
+                <img src="./images/boy.png"   id="img">
+           </div>
+           <div class="slide">
+                <img src="./images/boy.png"  id="img">
+           </div>
+       </div>
+   
+       <div id="controls">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+       </div>
+   
+   </div>
+
+     </section>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+      </script>
+</body>
+</html>
